@@ -1,0 +1,225 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin:0;
+    background-color: #f1efef;
+    margin-top: 80px;
+}
+header {
+    width: 70%;
+    height: 60px;
+    margin: 0 auto;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.05);
+    background-color: #fff;
+    position: fixed;
+    top:0;
+    left: 15%;
+}
+
+main {
+    width: 70%;
+    margin: 20px auto;
+    display: block;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1);
+}
+
+footer {
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+    box-shadow: 4px 0px 10px rgba(0,0,0,0.05);
+    background-color: #fff;
+}
+.nav-menu {
+    height: 60px;
+}
+
+.nav-menu > ul {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.nav-logo {
+    line-height: 60px;
+    padding: 0 10px;
+}
+.nav-logoimg {
+    padding: 20px 10px;
+}
+
+.nav-item {
+    display: inline-block;
+    line-height: 60px;
+}
+
+.nav-item > a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 15px;
+    display: block;
+    padding: 0 10px;
+}
+
+.nav-item > a:hover {
+    text-decoration: none;
+    background-color: #f1efef;
+    color: #3273dc;
+}
+
+.nav-logo {
+    float: left;
+}
+
+.nav-logoimg > img {
+    vertical-align: middle;
+}
+
+.nav-menu {
+    float: right;
+}
+
+.home-item {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 25px;
+    color: #4a4a4a;
+    margin: 30px 0;
+}
+
+p {
+    font-family: 'Maplestory';
+}
+
+.main-content {
+    padding:70px 30px;
+    *zoom: 1;
+}
+
+#home {
+}
+
+.home-content {
+    padding: 40px 0 0 0;
+}
+
+.main-content > section:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#addon {
+    float: right;
+    padding: 26px 10px;
+    
+}
+
+#addon > a{
+    color: #4a4a4a;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px;
+}
+
+#footerContent {
+    float: left;
+    padding: 15px 20px;
+
+}
+
+#footerContent > span {
+    color: #4a4a4a;
+    font-size: 12px;
+    
+}
+
+#footerContent > a {
+    color: #3273dc;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.about-img {
+    width: 300px;
+    height: 350px;
+    box-shadow: 0 0 5px 6px rgba(0,0,0,0.05), 0 0 10px 0 rgba(0,0,0,0.1);
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.about-content {
+    float: left;
+}
+
+.about-section {
+    margin: 0px 30px;
+}
+
+.about-content {
+    padding-bottom: 40px;
+}
+.about-content > p {
+    line-height: 2.0;
+    font-size: 20px;
+    color: #4a4a4a;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.about-content > a {
+    text-decoration: none;
+}
+
+.study-img {
+    width: 250px;
+    height: 250px;
+    margin: 0 30px;
+}
+
+.study-content, .study-content-img {
+    float: left;
+}
+
+.study-content > p {
+   line-height: 2.0;
+   font-size: 20px;
+}
+
+h3 {
+    font-family: "Maplestory";
+    border-bottom: 1px solid #a3a4a8;
+    color: #4a4a4a;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+
+.study-section {
+    margin: 0 3% 20px  3%;
+}
+
+
+@font-face {
+    font-family: Maplestory;
+    src:url('fonts/Maplestory Light.ttf') format('truetype');
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    main {
+        width: 100%;
+    }
+    
+    footer {
+        width: 100%;
+    }
+}

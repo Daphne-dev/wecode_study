@@ -3,10 +3,120 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
-<title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+/>
+<link rel=" shortcut icon" href="image/favicon.ico">
+<link rel="icon" href="image/favicon.ico">
+<title>Daphne의 홈페이지</title>
 </head>
 <body>
-안녕하세요
-<a href="about.html">about</a>
+<header>
+    <div class="nav-logo">
+        <a class="nav-logoimg" href="index.html"><img src="image/logo.PNG" alt="logo" height="30"></a>
+    </div>
+    <div class="nav-menu">
+        <ul>
+            <li class="nav-item"><a href="#top">Home</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#study">Study</a></li>
+            <li class="nav-item"><a href="https://github.com/Daphne-dev"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <div id="home">
+        <div class="home-content">
+            <p class="home-item">웹 백엔드 개발자 김동현입니다.</p>
+            <p class="home-item">함께 일하고 싶은 개발자가 되기 위해 노력하고 있습니다.</p>
+        </div>
+    </div>
+
+    <div id="about" class="main-content">
+        <section class="about-section">
+            <div class="about-content">
+                <img class="about-img" src="image/avatar.png" alt="프로필사진">
+            </div>
+            <div class="about-content">
+                <h3>Web Back-End Developer💻</h3>
+                <p>
+                Name : KIM DONG HYEON <br>
+                Language : Python<br>
+                Interests : Mongo DB, Django, Flask, Spring, NodeJS<br>
+                Favorite food: 치킨🍗, 귤🍊<br>
+                Hobby : Console game🎮</p>
+                <a href="https://github.com/Daphne-dev" target="_blank">
+                    <img 
+                        src="http://img.shields.io/badge/-Github-black?style=flat&logo=Github&link=https://github.com/Daphne-dev" 
+                        style="height : auto; "/>
+                </a>
+                <a href="https://daphne-dev.github.io" target="_blank">
+                    <img 
+                        src="http://img.shields.io/badge/-Tech blog-gray?style=flat&logo=Bloglovin&link=https://daphne-dev.github.io/" 
+                        style="height : auto; "/>
+                </a>
+                <a href="mailto:daphne01215@gmail.com" target="_blank">
+                    <img 
+                        src="http://img.shields.io/badge/-Gmail-D14836?style=flat&logo=Gmail&logoColor=white&link=mailto:daphne01215@gmail.com" 
+                        style="height : auto;"/>
+                </a>
+            </div>
+        </section>    
+    </div>
+
+    <div id="study" class="main-content">
+        <section class="study-section">
+            <div class="study-content-img">
+                <img class="study-img" src="image/notebook.jpg" alt="프로필사진">
+            </div>
+            <div class="study-content">
+                <h3>일일 공부</h3>
+                <p>
+                    매일 알고리즘 문제 2개씩 풀기<br>
+                    공부한 내용 블로그에 글쓰기(TIL)
+                </p>
+            </div>
+        </section>
+        <section class="study-section">
+            <div class="study-content-img">
+                <img class="study-img" src="image/coding.png" alt="생활코딩">
+            </div>
+            <div class="study-content">
+                <h3>생활코딩 Python 강의 듣기</h3>
+                <p>
+                    생활코딩 WEB2 - Python 강의 듣기<br>
+                    공부한 내용 블로그에 글쓰기(TIL)
+                </p>
+            </div>
+        </section>
+        <section class="study-section">
+            <div class="study-content-img">
+                <img class="study-img" src="image/wecode_logo.jpg" alt="위코드">
+            </div>
+            <div class="study-content">
+                <h3>Wecode</h3>
+                <p>
+                WECODE 13th 🎉<br>
+                위코드와 함께하는 공부<br>
+                1주차 : HTML & CSS로 자기소개 페이지 만들기<br>
+                2~3주차 : Python 문법 공부!<br>
+                4주차 : Git 사용법 익히기</p>
+            </div>
+        </section>
+    </div>
+</main>
+<footer>
+    <div id="footerContent">
+        <div class="footer-logo">
+            <a class="footer-logoimg" href="index.html"><img src="image/logo.PNG" alt="logo" height="24"></a>
+        </div>
+        <span>© 2020 Daphne</span><br>
+        <span>Using fonts by </span><a href="https://maplestory.nexon.com/Media/Font">MapleStory</a>
+    </div>
+    <div id="addon">
+        <a href="https://github.com/Daphne-dev"><i class="fab fa-github"></i></a>
+        <a href="mailto:daphne01215@gmail.com"><i class="far fa-envelope"></i></a>
+        <a href="https://daphne-dev.github.io/"><i class="fas fa-blog"></i></a>
+    </div>
+</footer>
 </body>
 </html>

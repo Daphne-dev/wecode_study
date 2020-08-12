@@ -5,6 +5,10 @@ Wecode 사전스터디를 진행하면서 공부한 내용과 느낀점 등을 �
 
 ## 1주차 : HTML & CSS를 이용한 자기소개 페이지 만들기
 
+
+__자기소개 페이지__  
+https://daphne-dev.github.io/wecode/
+
 __사용한 기술__  
 ![HTML](https://user-images.githubusercontent.com/59605994/89854712-8f78e700-dbcf-11ea-919c-b45dbc0bb232.png)
 ![icons8-css3-48](https://user-images.githubusercontent.com/59605994/89854463-e92ce180-dbce-11ea-826a-88927677726c.png "CSS") 

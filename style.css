@@ -7,6 +7,7 @@ body {
     background-color: #f1efef;
     margin-top: 80px;
 }
+
 header {
     width: 70%;
     height: 60px;
@@ -33,6 +34,7 @@ footer {
     box-shadow: 4px 0px 10px rgba(0,0,0,0.05);
     background-color: #fff;
 }
+
 .nav-menu {
     height: 60px;
 }
@@ -46,6 +48,7 @@ footer {
     line-height: 60px;
     padding: 0 10px;
 }
+
 .nav-logoimg {
     padding: 20px 10px;
 }
@@ -98,9 +101,6 @@ p {
     *zoom: 1;
 }
 
-#home {
-}
-
 .home-content {
     padding: 40px 0 0 0;
 }
@@ -150,7 +150,7 @@ p {
     margin-left: 30px;
 }
 
-.about-content {
+.about-content, .about-img {
     float: left;
 }
 
@@ -184,8 +184,8 @@ p {
 }
 
 .study-content > p {
-   line-height: 2.0;
-   font-size: 20px;
+line-height: 2.0;
+font-size: 20px;
 }
 
 h3 {
@@ -202,6 +202,21 @@ h3 {
     margin: 0 3% 20px  3%;
 }
 
+.project-content {
+    padding:30px 30px;
+    *zoom: 1;
+}
+
+#clock {
+    box-shadow: 0 0 5px 6px rgba(0,0,0,0.05), 0 0 10px 0 rgba(0,0,0,0.1);
+    width: 600px;
+    height: 170px;
+    line-height: 170px;
+    color: #4a4a4a;
+    font-size: 100px;
+    text-align: center;
+    margin: 30px auto;
+}
 
 @font-face {
     font-family: Maplestory;

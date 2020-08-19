@@ -218,12 +218,50 @@ h3 {
     margin: 30px auto;
 }
 
+#findSamePicture {
+    width: 550px;
+    height: 570px;
+    box-shadow: 0 0 5px 6px rgba(0,0,0,0.05), 0 0 10px 0 rgba(0,0,0,0.1);
+    margin: 30px auto;
+}
+
+#start {
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    border-bottom: 1px solid gray;
+    
+    
+}
+
+#cardTable  td {
+    width: 95px;
+    height: 100px;
+    cursor: pointer;
+    padding: 0;
+    margin: 2px;
+    border: 2px solid white;
+    text-align: center;
+    box-shadow: 0 0 5px 6px rgba(0,0,0,0.05), 0 0 10px 0 rgba(0,0,0,0.1);
+
+}
+
+.hide {
+    display: none;
+    vertical-align: middle;
+}
+
+#cardTable img {
+    vertical-align: middle;
+}
+
 @font-face {
     font-family: Maplestory;
     src:url('fonts/Maplestory Light.ttf') format('truetype');
 }
 
-@media screen and (max-width: 768px), screen and (max-height:768px) and (orientation: landscape) {
+@media screen and (max-width: 1024px), screen and (max-height:768px) and (orientation: landscape) {
     header {
         width: 100%;
         top: 0;

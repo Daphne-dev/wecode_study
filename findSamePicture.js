@@ -57,7 +57,7 @@ function startGame() {
     setCardTable();
 
     function timePrint(){
-        timeCount.style.display = 'block';
+        timeCount.style.display = 'inline-block';
         timeCount.innerHTML = sec;
         if (sec > 1) {
             sec -= 1;
@@ -139,7 +139,7 @@ function clickStart() {
 }
 
 
-start.addEventListener("click", clickStart, false);
+start.getElementsByTagName("span")[0].addEventListener("click", clickStart, false);
 
 
 

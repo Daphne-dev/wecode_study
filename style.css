@@ -220,19 +220,36 @@ h3 {
 
 #findSamePicture {
     width: 550px;
-    height: 570px;
+    height: 595px;
     box-shadow: 0 0 5px 6px rgba(0,0,0,0.05), 0 0 10px 0 rgba(0,0,0,0.1);
     margin: 30px auto;
 }
 
 #start {
     width: auto;
-    height: 30px;
-    line-height: 30px;
+    height: 55px;
+    line-height: 55px;
     padding-left: 10px;
     border-bottom: 1px solid gray;
+    font-family: 'Maplestory';
     
     
+}
+
+#start span {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    background-color: #4a4a4a5c;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#start span:hover {
+    text-decoration: none;
+    background-color: #4a4a4a5c;
+    color: #789dd8;
 }
 
 #cardTable  td {
@@ -255,6 +272,21 @@ h3 {
 #cardTable img {
     vertical-align: middle;
 }
+
+#countDown {
+    font-family: 'Maplestory';
+}
+
+#project span {
+    font-family: 'Maplestory';
+}
+
+#project span a {
+    text-decoration: none;
+    color: #3273dc;
+}
+
+
 
 @font-face {
     font-family: Maplestory;
@@ -299,3 +331,46 @@ h3 {
         width: 404px;
     }
 }
+
+@media screen and (max-width: 375px), screen and (max-height: 486px) and (orientation: landscape) {
+
+    header {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    main {
+        width: 100%;
+    }
+    
+    footer {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 30px 0;
+    }
+    
+    .about-img ,.about-content{
+        float: none;
+        text-align: center;
+    }
+
+    #about_id > h3 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .study-img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .study-content {
+        width: 404px;
+    }
+
+
+}
+

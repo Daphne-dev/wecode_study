@@ -29,6 +29,7 @@ function setCardTable() {
         'card_014.png','card_014.png',
         'card_015.png','card_015.png'
     ];
+
     var cardTable = '<tr>';
     for(var i = 0; i < 30; i++){
         if(i > 0 && i % 6 == 0){
@@ -43,13 +44,12 @@ function setCardTable() {
 }
 
 // 카드 숨기기
-function hideCard() {
-    for(var i=0; i < 30; i++) {
-        front[i].style.zIndex = '1';
-        front[i].style.transform = 'rotateY(180deg)';
-        hide[i].style.zIndex = '2';
-        hide[i].style.transform = 'rotateY(0deg)';
-    }
+function hideCard(front, hide) {
+    front.style.zIndex = '1';
+    front.style.transform = 'rotateY(180deg)';
+    hide.style.zIndex = '2';
+    hide.style.transform = 'rotateY(0deg)';
+    
 }
 
 // 게임 시작
@@ -71,7 +71,16 @@ function startGame() {
     setTimeout(function() {
         clearInterval(countDown);
         timeCount.style.display = 'none';
-        hideCard();
+        var i = 0;
+        cardHide = setInterval(function(){
+            if (i == 30){
+                clearInterval(cardHide);
+            } else {
+                hideCard(front[i], hide[i]);
+                i++;
+            } 
+        }, 100);
+        
         gameState = 'already';
     }, 6000);
 

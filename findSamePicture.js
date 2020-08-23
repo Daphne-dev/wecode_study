@@ -41,6 +41,15 @@ function setCardTable() {
     }
     cardTable += '</tr>';
     cardTableId.innerHTML = cardTable;
+    var i = 0;
+    cardOpen = setInterval(function(){
+        if (i == 30){
+            clearInterval(cardOpen);
+        } else {
+            openCard(front[i], hide[i]);
+            i++;
+        } 
+    }, 100);
 }
 
 // 카드 숨기기
@@ -50,6 +59,14 @@ function hideCard(front, hide) {
     hide.style.zIndex = '2';
     hide.style.transform = 'rotateY(0deg)';
     
+}
+
+// 카드 보여주기 
+function openCard(front, hide) {
+    hide.style.zIndex = '1';
+    hide.style.transform = 'rotateY(180deg)';
+    front.style.zIndex = '2';
+    front.style.transform = 'rotateY(0deg)';
 }
 
 // 게임 시작
@@ -112,14 +129,12 @@ function startGame() {
                 
                 if(count == 1){
                     firstSelect = cardImg;
-                    firstHide = hideImg;
                     this.classList.add("open");
                     firstClassCard = this;
                     firstFrontRotateY = front;
                     firstHideRotateY = hide;
                 } else if(count == 2){
                     secondSelect = cardImg;
-                    secondHide = hideImg;
                     this.classList.add("open");
                     secondClassCard = this;
                     secondFrontRotateY = front;
@@ -137,6 +152,8 @@ function startGame() {
                     }
                     else{
                         setTimeout(function(){
+                            hideCard(front, hide);
+
                             firstFrontRotateY.style.zIndex = '1';
                             firstFrontRotateY.style.transform = 'rotateY(-180deg)';
                             firstHideRotateY.style.zIndex = '2';

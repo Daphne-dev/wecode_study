@@ -274,11 +274,11 @@ h3 {
     backface-visibility: hidden;
 }
 
-.front {
+.hide {
     z-index: 2;
 }
 
-.hide {
+.front {
     z-index: 1;
     transform: rotateY(-180deg);
     vertical-align: middle;

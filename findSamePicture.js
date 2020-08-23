@@ -2,6 +2,8 @@ var cards;
 var start = document.getElementById("start");
 var cardTableId = document.getElementById("cardTable");
 var gameState = 'already';
+var front = document.getElementsByClassName("front");
+var hide = document.getElementsByClassName("hide");
 
 // 난수 생성기
 function getRandomInt(min, max) { 
@@ -34,7 +36,7 @@ function setCardTable() {
         }
         var index = getRandomInt(0,29-i);
         var img = cards.splice(index,1);
-        cardTable += '<td id="card'+i+'"><img class="card-list" src="image/maple/'+img+'"><img class="hide" src="image/maple/hide_maple.png"></td>';
+        cardTable += '<td id="card'+i+'"><div class="front card"><img src="image/maple/'+img+'"></div><div class="hide card"><img src="image/maple/hide_maple.png"></div></td>';
     }
     cardTable += '</tr>';
     cardTableId.innerHTML = cardTable;
@@ -42,11 +44,11 @@ function setCardTable() {
 
 // 카드 숨기기
 function hideCard() {
-    var cards = document.getElementsByClassName("card-list");
-    var hide = document.getElementsByClassName("hide");
-    for(var i=0; i < cards.length; i++) {
-        cards[i].style.display = 'none';
-        hide[i].style.display = 'block';
+    for(var i=0; i < 30; i++) {
+        front[i].style.zIndex = '1';
+        front[i].style.transform = 'rotateY(180deg)';
+        hide[i].style.zIndex = '2';
+        hide[i].style.transform = 'rotateY(0deg)';
     }
 }
 
@@ -89,8 +91,12 @@ function startGame() {
                 if(this.className == 'open') return;
                 var cardImg = this.getElementsByTagName("img")[0];
                 var hideImg = this.getElementsByTagName("img")[1];
-                cardImg.style.display = "block";
-                hideImg.style.display = "none";
+                var front = this.getElementsByTagName("div")[0];
+                var hide = this.getElementsByTagName("div")[1];
+                front.style.zIndex = '2';
+                front.style.transform = 'rotateY(0deg)';
+                hide.style.zIndex = '1';
+                hide.style.transform = 'rotateY(-180deg)';
                 count++;
                 
                 
@@ -100,23 +106,38 @@ function startGame() {
                     firstHide = hideImg;
                     this.classList.add("open");
                     firstClassCard = this;
+                    firstFrontRotateY = front;
+                    firstHideRotateY = hide;
                 } else if(count == 2){
                     secondSelect = cardImg;
                     secondHide = hideImg;
                     this.classList.add("open");
                     secondClassCard = this;
+                    secondFrontRotateY = front;
+                    secondHideRotateY = hide;
                     if(firstSelect.getAttribute("src")== secondSelect.getAttribute("src")) {
                         success++;
                         secondSelect = '';  
+                        console.log(success);
+                        if (success == 15){
+                            alert("Clear!")
+                        }
                         event.stopPropagation();
                         event.preventDefault();
+
                     }
                     else{
                         setTimeout(function(){
-                            firstSelect.style.display = "none";
-                            secondSelect.style.display = "none";
-                            firstHide.style.display = "block";
-                            secondHide.style.display = "block";
+                            firstFrontRotateY.style.zIndex = '1';
+                            firstFrontRotateY.style.transform = 'rotateY(-180deg)';
+                            firstHideRotateY.style.zIndex = '2';
+                            firstHideRotateY.style.transform = 'rotateY(0deg)';
+
+                            secondFrontRotateY.style.zIndex = '1';
+                            secondFrontRotateY.style.transform = 'rotateY(-180deg)';
+                            secondHideRotateY.style.zIndex = '2';
+                            secondHideRotateY.style.transform = 'rotateY(0deg)';
+                            
                             firstSelect = '';
                             secondSelect = '';     
                             firstClassCard.classList.remove("open");

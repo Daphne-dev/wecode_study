@@ -7,7 +7,7 @@ Wecode 사전스터디를 진행하면서 공부한 내용과 느낀점 등을 �
 
 
 __자기소개 페이지__  
-https://daphne-dev.github.io/wecode/
+https://daphne-dev.github.io/wecode_study/
 
 __사용한 기술__  
 ![HTML](https://user-images.githubusercontent.com/59605994/89854712-8f78e700-dbcf-11ea-919c-b45dbc0bb232.png)
@@ -27,7 +27,7 @@ __느낀점__
 ## 2주차 : JavaScript를 이용한 간단한 토이 프로젝트 만들기
 
 __토이 프로젝트 주소__  
-https://daphne-dev.github.io/wecode/project
+https://daphne-dev.github.io/wecode_study/project
 
 __사용한 기술__  
 ![icons8-javascript-48](https://user-images.githubusercontent.com/59605994/89854755-b0d9d300-dbcf-11ea-8c48-0735e77b2c6e.png)
